@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Infinario Plugin",
+  "description": "Some hacks for Infinario",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "logo.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+   ],
+   "content_scripts": 
+    [
+        {
+            "matches": ["*://cloud.infinario.com/#/p/*/project/data-management/events"],
+            "js":["jquery.js","check_attributes.js"],           
+            "run_at": "document_end"
+        }
+    ]
+}
+
