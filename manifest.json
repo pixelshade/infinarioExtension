@@ -10,7 +10,7 @@
    "default_popup": "popup.html"
   },
   "permissions": [
-   "activeTab"
+   "tabs", "*://cloud.infinario.com/#/p/*/project/data-management/events"
    ],
    "content_scripts": 
     [
