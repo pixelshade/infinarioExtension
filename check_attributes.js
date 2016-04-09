@@ -2,8 +2,7 @@
     
     
 // var checkAttributes = function(){
-// clear();
-document.body.style.backgroundColor = "red";
+
 var empty_attributes = [];
 var danger_attributes = [];
 $('.property-group tbody tr').each(function(i, val){
@@ -13,7 +12,7 @@ $('.property-group tbody tr').each(function(i, val){
         var kuk = $(val).children().eq(1).children().first().children().first().children().first();
         var attr_name = chil.first().text();
 
-        kuk.click();
+        kuk[0].click();
         setTimeout(function(){
             var total = 0;
             var total24 = 0;
@@ -58,7 +57,7 @@ $('.property-group tbody tr').each(function(i, val){
               chil.first().css("background","red");
             }
             
-            $('.close').click();    
+            $('.close')[0].click();    
         }, 2000);
     }, (i)*3000);
 
