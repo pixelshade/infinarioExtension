@@ -1,9 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Infinario Plugin",
-  "description": "Some hacks for Infinario",
+  "name": "Infinario Hacks",
+  "description": "Some hacks for Infinario",  
   "version": "1.0",
+  "icons": {
+    "128": "logo.png"
+  },
+  "author": "pixelshade",
 
   "browser_action": {
    "default_icon": "logo.png",
